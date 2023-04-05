@@ -19,8 +19,8 @@ jobs:
           fetch-depth: '0'
       - name: set-git-identity
         run: |
-          git config --global user.name "${{ secrets.GIT_IDENTITY_USER_NAME }}"
-          git config --global user.email "${{ secrets.GIT_IDENTITY_USER_EMAIL }}"
+          git config --global user.name "lostdir@lostdir69.eu.org"
+          git config --global user.email "lostdir69"
       - name: install-required-py3-pkgs
         run: |
           sudo python3 -m pip install wheel setuptools
